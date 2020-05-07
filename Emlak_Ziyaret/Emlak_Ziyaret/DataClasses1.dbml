@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Emlak_Sitesi" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-1MFSCBQ\MSSQLSERVERAD;Initial Catalog=Emlak_Sitesi;Integrated Security=True" SettingsObjectName="Emlak_Ziyaret.Properties.Settings" SettingsPropertyName="Emlak_SitesiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tablo_Gorseller" Member="Tablo_Gorseller">
+    <Type Name="Tablo_Gorseller">
+      <Column Name="f_Record" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ilan_No" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gorsel" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tablo_ilan" Member="Tablo_ilan">
+    <Type Name="Tablo_ilan">
+      <Column Name="E_Kayit" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ilan_Baslik" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Ilan_Tarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Konum" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Ilan_Temel_Gorsel" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Ucret" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Alan" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Bina_Yasi" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Kat_Sayisi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Isıtma" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Balkon" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Aidat" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ilan_Veren" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Ilan_Veren_Telefon" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
